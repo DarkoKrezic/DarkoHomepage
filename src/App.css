@@ -1,0 +1,132 @@
+.App {
+  text-align: center;
+  min-height: 700px;
+  position: relative;
+  background-image: url("./images/codernneu.jpg");
+background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.HiIMDarko {
+color: #FFF;
+font-family: Jolly Lodger;
+font-size: 6rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+border-radius: 20px;
+background: rgba(29, 27, 27, 0.70);
+text-align: left;
+display: inline-block;
+position: absolute;
+top: 20px;
+left: 10vw;
+padding: 10px;
+
+}
+.navbar {
+  color: #FFF;
+  
+}
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin: auto;
+  padding: 0%;
+  list-style: none;
+}
+.nav-item {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+  padding: 5px;
+}
+.nav-link {
+  font-size: 2.5rem;
+  color: #FFF;
+  text-decoration: none;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 50vh;
+  margin: 0%;
+  }
+  .section-header {
+    color: #FFF;
+    font-family: Jolly Lodger;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: left;
+    display: inline-block;
+    margin: auto;
+  }
+.section-text {
+  color: #FFF; 
+  font-size: 1.5rem;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: left;
+  margin: 24px 35px;
+  padding: 10px 5px ;
+}
+.profilePic {
+  border-radius: 50%;
+  width: 7rem;
+  height: 7rem;
+
+}
+.skillIcon {
+  width: 5rem;
+  height: auto;
+}
+.skillImageContainer {
+  width: 80vw;
+  gap: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+  padding: 0 10px;
+}
+#projects {
+  display: flex;
+  flex-direction: column;
+  
+}
+.project-header {
+  color: #8290af;
+  font-size: 2rem;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+
+}
+.contact-links {
+gap: 2rem;
+display: flex;
+flex-direction: row;
+background: rgba(22, 21, 21, 0.575);
+border-radius: 20px;
+justify-content: space-evenly;
+padding: 5px 20px;
+}
+
