@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./App.css";
 import profilePic from "./images/Darko_a_male_character_pixar_style.png";
 import jsIcon from "./images/icons8-javascript-48.png";
@@ -11,9 +11,27 @@ import nextIcon from "./images/nextjs.png";
 import githubIcon from "./images/Github_icon.png";
 import linkedinIcon from "./images/linkedinIcon.png";
 import instaIcon from "./images/instaIcon.png";
+
 function App() {
+  useEffect(() => {
+    const parallaxLayer = document.getElementById("parallax-layer");
+
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const translateY = -scrollY * 0.1; // Adjust the scroll speed (0.2 represents 20% of the scroll speed)
+      const scale = 1 + scrollY * 0.0003; // Adjust the zoom factor
+      parallaxLayer.style.transform = `translateY(${translateY}px) scale(${scale})`;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <div className="App">
+      <div id="parallax-layer" className="parallax-layer"></div>
       <nav className="navbar sticky">
         <ul className="nav">
           <li className="nav-item">
