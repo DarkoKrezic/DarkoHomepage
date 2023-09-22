@@ -100,21 +100,21 @@ function App() {
               target="_blank"
               rel="noreferrer"
             >
-              <img src={githubIcon} className="skillIcon" alt="github" />{" "}
+              <img src={githubIcon} className="contactIcon" alt="github" />{" "}
             </a>
             <a
               href="https://www.linkedin.com/in/darko-krezic/"
               target="_blank"
               rel="noreferrer"
             >
-              <img src={linkedinIcon} className="skillIcon" alt="LinkedIn" />{" "}
+              <img src={linkedinIcon} className="contactIcon" alt="LinkedIn" />{" "}
             </a>
             <a
               href="https://www.instagram.com/darko_beats_/?hl=de"
               target="_blank"
               rel="noreferrer"
             >
-              <img src={instaIcon} className="skillIcon" alt="Instagram" />{" "}
+              <img src={instaIcon} className="contactIcon" alt="Instagram" />{" "}
             </a>
           </div>
         </section>

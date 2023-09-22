@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .App {
   text-align: center;
   min-height: 700px;
@@ -24,8 +28,22 @@
   left: 10vw;
   padding: 10px;
 }
+@keyframes box-shadow-animation {
+  0% {
+    box-shadow: #e9ed9c 0px 0px 10px 0px;
+  }
+  50% {
+    box-shadow: #a27aba 0px 0px 10px 0px;
+  }
+  100% {
+    box-shadow: #e9ed9c 0px 0px 10px 0px;
+  }
+}
+
 .navbar {
   color: #fff;
+  background: rgba(26, 18, 65, 0.495);
+  animation: box-shadow-animation 5s infinite;
 }
 .sticky {
   position: sticky;
@@ -93,7 +111,7 @@
   height: 7rem;
 }
 .skillIcon {
-  width: 5rem;
+  width: 4rem;
   height: auto;
 }
 .skillImageContainer {
@@ -112,15 +130,45 @@
   display: flex;
   flex-direction: column;
 }
+@keyframes header-shadow-animation {
+  0% {
+    box-shadow: none;
+  }
+  50% {
+    box-shadow: 0 0 10px rgba(207, 197, 197, 0.3);
+  }
+  100% {
+    box-shadow: none;
+  }
+}
+
+@keyframes header-color-animation {
+  0% {
+    color: #e9ed9c;
+  }
+  50% {
+    color: #82d9e3;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  100% {
+    color: #e9ed9c;
+  }
+}
+
 .project-header {
   color: #c5c14f;
   font-size: 2rem;
   text-decoration: none;
   background: rgba(0, 0, 0, 0.7);
   border-radius: 20px;
+  animation: header-shadow-animation 5s infinite,
+    header-color-animation 3s infinite; /* Set animation duration */
 }
+
 .project-header:hover {
   color: #e9ed9c;
+  text-shadow: #fff 0px 0px 10px;
+  animation: none; /* Disable animation on hover */
 }
 .contact-links {
   gap: 2rem;
@@ -130,4 +178,11 @@
   border-radius: 20px;
   justify-content: space-evenly;
   padding: 5px 20px;
+}
+.contactIcon {
+  width: 4rem;
+  height: auto;
+}
+.contactIcon:hover {
+  transform: scale(1.2);
 }
